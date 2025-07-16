@@ -1,4 +1,4 @@
-#################################################################
+##
 binary search template
 i'm struggling to understand what each code means, a classic problem
 yet i managed to understand it
@@ -35,7 +35,7 @@ function binarySearch(arr, x){
     return -1
     return -1 if array length is 0
 }
-###########################################################################
+##
 //testcase
 arr = new Array (2,3,4,10,40)
 assign an array
@@ -53,5 +53,5 @@ else{
     console.log("the item was found at index" + " "+ result)
     if item was found, console.log "item was found at index + " "+ result
 }
-###########################################################################
+##
 for the recrusive part it's the same, but the different is we need to asign high and low as a parameter
