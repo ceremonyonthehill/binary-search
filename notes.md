@@ -5,7 +5,7 @@ yet i managed to understand it
 
 ## 📘 for the binary search iteration model:
 
-`function binarySearch(arr, x){
+```function binarySearch(arr, x){
     let low = 0;
     // assign this for tracking the buttom part
 
@@ -35,11 +35,11 @@ yet i managed to understand it
     }
     return -1
     // return -1 if array length is 0
-}`
+}```
 
 ## 🔧 testcase
 
-`arr = new Array (2,3,4,10,40)
+```arr = new Array (2,3,4,10,40)
 // assign an array
 
 x = 10
@@ -54,7 +54,7 @@ if(result == -1)
 else{
     console.log("the item was found at index" + " "+ result)
     // if item was found, console.log "item was found at index + " "+ result
-}`
+}```
 
 ## 📘 binary search recrusive model
 
