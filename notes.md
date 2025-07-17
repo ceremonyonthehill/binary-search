@@ -64,3 +64,45 @@ else{
 
  for the recrusive part it's the same, but the different is we need 
  assign high and low as a parameter.
+
+ ## 📘 leetcode problem number 35
+
+ im struggling figuring out how to make function return the before target number, for example if target 3. the answer will be 2
+ i'm thingking of making a loop that iterate each array than if statement that identify if there is no target number in array, current target - 1
+
+ but i miss understanding in here, we should giving an ouput of index not the value
+ we looking for if array = 1,2,3,5 and the target is 4
+ we will identify the index it should be
+ in this case is 5 where 4 should be (index 3), because 1,2,3,4,5
+
+ this makes me relize i still have no idea how bad i'am and need more improvement
+ also how shock i'm the answer is changing the return - 1, to the return low. thus more showing how i have no idea what im doing xd
+ why low contain the should-be index
+ array = 1,3,5,6
+ target = 2
+ low = 0, high = 3, and mid = 1
+ checked are mid in index 1 wich have value 3 bigger than 2?
+ yes
+ code execute high - 1, or in other words move to the left
+ the code should be works like this
+ 3 > 2 /true
+ high = mid - 1
+ mid value = 1
+ so 1-1
+ high = 0
+
+ than we move on to the low section
+ low = 0
+ high = 0
+ mid = 0 or the value is 1
+ than checks do mid is bigger than target?
+ the answer is no
+ than mid + 1, or in other words moves to the right
+ the value of mid becomes 1
+ so we have two new information right now
+ high updated as 0, and low updated as 1
+ then if we checked to the array index 1 is where the target should be, because 1,2,3
+ tha's how low is saving where the index is.
+ 
+
+ 
